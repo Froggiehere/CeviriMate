@@ -1,138 +1,132 @@
-# 🌐 CeviriMate  
+# 🌐 CeviriMate
+
 **AI-Powered Web-Based CAT Tool**  
 *A project by BabelCoders — Built by high school innovators!*
 
 ---
 
-## 🚀 Overview
+## 📖 English Version
 
-**CeviriMate** is an innovative, **web-based Computer-Assisted Translation (CAT)** tool that boosts **translation efficiency** and **accuracy** using cutting-edge **Artificial Intelligence (AI)** and **Natural Language Processing (NLP)** technologies.
+### 🚀 Overview
 
-Developed by high school students under the name **BabelCoders**, CeviriMate is designed to support:
+**CeviriMate** is a modern, web-based **Computer-Assisted Translation (CAT)** tool that enhances **translation speed** and **accuracy** using advanced **AI** and **Natural Language Processing (NLP)**.
+
+Developed by high school students under the team name **BabelCoders**, CeviriMate supports:
 
 - 🌍 **Language learners**
 - 💼 **Professional translators**
 - 🏢 **Translation agencies**
 
-With a focus on **smart**, **fast**, and **cost-effective** translation workflows.
+Focused on delivering **smart**, **fast**, and **cost-effective** translation workflows.
 
 ---
 
-## ✨ Key Features
+### ✨ Key Features
 
-### 🔁 Bilingual Side-by-Side Interface
-View **source** and **target texts** in parallel columns for easy **comparison** and **editing**.
+#### 🔁 Bilingual Side-by-Side Interface
+View **source** and **target** texts in parallel columns for easy comparison and editing.
 
-### 📚 Translation Memory (TM)
-Automatically stores all previous translations and offers **consistent terminology suggestions** for future tasks.
+#### 📚 Translation Memory (TM)
+Automatically saves past translations and suggests consistent terminology for future use.
 
-### 🧩 AI-Based Suggestion System  
-Learns from your **style** and **preferences** to recommend **smart translation alternatives**.
+#### 🧩 AI-Based Suggestion System  
+Learns from your **style** and **preferences** to offer smart translation alternatives.
 
-### 🤖 DeepL API Integration
+#### 🤖 DeepL API Integration
 Integrates the **DeepL Free API** to provide:
 
-- **High-quality**, **fluent** machine translations  
-- **Real-time translation updates**
-- Automatic saving to the **Translation Memory** for reuse
+- High-quality, fluent machine translations  
+- Real-time updates while typing  
+- Automatic saving into Translation Memory
 
 ---
 
-## 🧠 Planned Features (Coming Soon)
+### 🧠 Planned Features (Coming Soon)
 
-### 👥 Team & Organization Dashboard  
-Allows institutions to **track employee activity** and manage **collaborative translation projects**.
+#### 👥 Team & Organization Dashboard  
+Manage **teams**, track **progress**, and collaborate on translation projects.
 
-### 🔍 Instant Google Search  
-Select any **word** or **phrase** to instantly search on **Google** for additional context and reference.
-
----
-
-## 👨‍💻 Built With
-
-- **React + Vite** for a blazing-fast front-end
-- **Firebase** for backend services
-- **DeepL API** for machine translation
-- **Gemini** for AI suggestions
-- A passion for languages, learning, and building cool stuff!
+#### 🔍 Instant Google Search  
+Select any **word** or **phrase** to quickly search for context on **Google**.
 
 ---
 
-## 📫 Get In Touch
+### 👨‍💻 Built With
 
-Want to collaborate or contribute? Reach out to the **BabelCoders** team!
+- ⚛️ **React + Vite** — blazing-fast frontend
+- 🔥 **Firebase** — real-time backend
+- 🌐 **DeepL API** — for machine translation
+- 🧠 **Gemini** — for AI suggestions
+- ❤️ A passion for languages & technology
 
 ---
+
+### 📫 Get In Touch
+
+Want to contribute or collaborate? Contact the **BabelCoders** team!
 
 > ✨ *CeviriMate — Bridging languages with the power of AI.*
 
 ---
 
-# 🌐 CeviriMate  
-**Yapay Zeka Destekli Web Tabanlı CAT Aracı**  
-*BabelCoders tarafından geliştirildi — Lise öğrencilerinden oluşan yenilikçi bir ekip!*
+## 📖 Türkçe Sürüm
 
----
+### 🚀 Genel Bakış
 
-## 🚀 Genel Bakış
+**CeviriMate**, çeviri **hızını** ve **doğruluğunu** artırmak için gelişmiş **Yapay Zeka (AI)** ve **Doğal Dil İşleme (NLP)** teknolojilerini kullanan modern bir **web tabanlı Bilgisayar Destekli Çeviri (CAT)** aracıdır.
 
-**CeviriMate**, çeviri **verimliliğini** ve **doğruluğunu** artırmak için en son **Yapay Zeka (AI)** ve **Doğal Dil İşleme (NLP)** teknolojilerini kullanan, yenilikçi bir **web tabanlı Bilgisayar Destekli Çeviri (CAT)** aracıdır.
-
-**BabelCoders** ismiyle bir araya gelen lise öğrencileri tarafından geliştirilen CeviriMate, şu grupları desteklemek için tasarlanmıştır:
+**BabelCoders** ismiyle bir araya gelen lise öğrencileri tarafından geliştirilmiştir. Desteklediği kullanıcılar:
 
 - 🌍 **Dil öğrenenler**
 - 💼 **Profesyonel çevirmenler**
 - 🏢 **Çeviri ajansları**
 
-Odak noktası: **akıllı**, **hızlı** ve **maliyet-etkin** çeviri süreçleri.
+Odak noktası: **akıllı**, **hızlı** ve **maliyet-etkin** çeviri süreçleri sunmak.
 
 ---
 
-## ✨ Temel Özellikler
+### ✨ Temel Özellikler
 
-### 🔁 İki Dilli Yan Yana Arayüz  
-**Kaynak** ve **hedef metinleri** paralel sütunlarda görüntüleyerek kolayca **karşılaştırma** ve **düzenleme** yapın.
+#### 🔁 İki Dilli Yan Yana Arayüz  
+**Kaynak** ve **hedef** metinleri paralel sütunlarda görüntüleyerek kolayca karşılaştırma ve düzenleme yapın.
 
-### 📚 Çeviri Belleği (TM)  
-Önceki tüm çevirileri otomatik olarak kaydeder ve gelecekteki işler için **tutarlı terim önerileri** sunar.
+#### 📚 Çeviri Belleği (TM)  
+Geçmiş çevirileri otomatik olarak kaydeder ve tutarlı terim önerileri sunar.
 
-### 🧩 Yapay Zeka Tabanlı Öneri Sistemi  
-**Tarzınızı** ve **tercihlerinizi** öğrenerek **akıllı çeviri alternatifleri** önerir.
+#### 🧩 Yapay Zeka Tabanlı Öneri Sistemi  
+**Tarzınızı** ve **tercihlerinizi** öğrenerek akıllı çeviri alternatifleri önerir.
 
-### 🤖 DeepL API Entegrasyonu  
+#### 🤖 DeepL API Entegrasyonu  
 **DeepL Free API** ile entegredir ve şunları sağlar:
 
-- **Yüksek kaliteli**, **akıcı** makine çevirileri  
-- **Gerçek zamanlı çeviri güncellemeleri**  
-- **Çeviri Belleği’ne** otomatik kayıt ile tekrar kullanım
+- Yüksek kaliteli, akıcı makine çevirileri  
+- Yazarken gerçek zamanlı çeviri güncellemeleri  
+- Çeviri Belleği’ne otomatik kayıt
 
 ---
 
-## 🧠 Planlanan Özellikler (Yakında)
+### 🧠 Planlanan Özellikler (Yakında)
 
-### 👥 Ekip ve Kurum Panosu  
-Kurumların **çalışan aktivitelerini takip etmesini** ve **işbirlikçi çeviri projelerini yönetmesini** sağlar.
+#### 👥 Ekip ve Kurum Panosu  
+Ekipleri yönetin, ilerlemeyi takip edin ve işbirlikçi çeviri projeleri oluşturun.
 
-### 🔍 Anında Google Araması  
-Herhangi bir **kelimeyi** veya **ifadeyi** seçerek **Google’da** anında bağlam ve referans araması yapabilirsiniz.
-
----
-
-## 👨‍💻 Kullanılan Teknolojiler
-
-- **React + Vite** ile son derece hızlı ön yüz geliştirme
-- **Firebase** ile arka uç hizmetleri
-- **DeepL API** ile makine çevirisi
-- **Gemini** yapay zeka önerileri için  
-- Dillere, öğrenmeye ve harika şeyler inşa etmeye olan tutku!
+#### 🔍 Anında Google Araması  
+Herhangi bir **kelime** veya **ifade**yi seçerek **Google’da** bağlam arayın.
 
 ---
 
-## 📫 İletişime Geçin
+### 👨‍💻 Kullanılan Teknolojiler
 
-Birlikte çalışmak veya katkıda bulunmak mı istiyorsunuz? **BabelCoders** ekibiyle iletişime geçin!
+- ⚛️ **React + Vite** — son derece hızlı ön yüz
+- 🔥 **Firebase** — gerçek zamanlı arka uç
+- 🌐 **DeepL API** — makine çevirisi için
+- 🧠 **Gemini** — yapay zeka önerileri için
+- ❤️ Dillere ve teknolojiye duyulan tutku
 
 ---
+
+### 📫 İletişime Geçin
+
+Katkıda bulunmak veya işbirliği yapmak ister misiniz? **BabelCoders** ekibiyle iletişime geçin!
 
 > ✨ *CeviriMate — Diller arasında yapay zekanın gücüyle köprü kurar.*
-
