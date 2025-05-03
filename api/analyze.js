@@ -13,18 +13,21 @@ export default async function handler(req, res) {
     .map((t, i) => `Text ${i + 1}:\n${t}`)
     .join('\n\n');
 
-  const prompt = `
-You're a linguistic analysis tool. Analyze the following collection of texts and return:
-1. A list of the most frequently used phrases (top 10), grouped when possible.
-2. Recommendations for improving the translation process and writing quality.
-3. Use plain text only — no markdown, bullets, or symbols.
-4. Use a numbered list format to structure items and clear section titles.
-5. Write in Turkish, but keep the source texts in English.
-6. Keep spacing and readability clean and consistent.
-
-Texts:
-${joinedTexts}
-`;
+    const prompt = `
+    You're a linguistic analysis tool. Analyze the following collection of texts and return:
+    1. En sık kullanılan ifadelerin (top 10) bir listesini ver. Benzer olanları grupla.
+    2. Çeviri sürecini ve yazı kalitesini geliştirmeye yönelik öneriler sun.
+    3. Sadece düz metin kullan — markdown, madde işareti veya sembol kullanma.
+    4. Maddeleri numaralandır ve bölümleri açık başlıklarla ayır.
+    5. Açıklamalar Türkçe olacak, metinler orijinal dilinde kalacak.
+    6. Okunabilirlik için boşluklara dikkat et, düzenli yaz.
+    7. Türkçe yazarken daima Türkçe karakterler kullan: ç, ğ, ö, ş, ü, ı gibi.
+    8. Eğer metin çok kısaysa "Analiz için yeterli veri yok." yaz.
+    9. Unutma: Türkçe karakter kullanımı çok önemlidir. Yanlışlıkla ASCII karşılıklarını (g, s, i, u gibi) kullanma.
+    
+    Metinler:
+    ${joinedTexts}
+    `;
 
   try {
     const response = await fetch(

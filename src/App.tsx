@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { TranslationEditor } from './components/TranslationEditor';
 import { TranslationHistory } from './components/TranslationHistory';
-import { TranslationAnalysis } from './components/TranslationAnalysis';
 import { Toaster } from 'react-hot-toast';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
           <Routes>
             <Route path="/" element={<TranslationEditor />} />
             <Route path="/history" element={<TranslationHistory />} />
-            <Route path='/analysis' element={<TranslationAnalysis/>} />
           </Routes>
         </main>
 
