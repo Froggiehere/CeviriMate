@@ -1,4 +1,4 @@
-# 🌐 CeviriMate
+# 🌐 LexiMate
 
 **AI-Powered Web-Based CAT Tool**  
 *A project by BabelCoders — Built by high school innovators!*
@@ -9,9 +9,9 @@
 
 ### 🚀 Overview
 
-**CeviriMate** is a modern, web-based **Computer-Assisted Translation (CAT)** tool that enhances **translation speed** and **accuracy** using advanced **AI** and **Natural Language Processing (NLP)**.
+**LexiMate** is a modern, web-based **Computer-Assisted Translation (CAT)** tool that enhances **translation speed** and **accuracy** using advanced **AI** and **Natural Language Processing (NLP)**.
 
-Developed by high school students under the team name **BabelCoders**, CeviriMate supports:
+Developed by high school students under the team name **BabelCoders**, LexiMate supports:
 
 - 🌍 **Language learners**
 - 💼 **Professional translators**
@@ -65,7 +65,7 @@ Select any **word** or **phrase** to quickly search for context on **Google**.
 
 Want to contribute or collaborate? Contact the **BabelCoders** team!
 
-> ✨ *CeviriMate — Bridging languages with the power of AI.*
+> ✨ *LexiMate — Bridging languages with the power of AI.*
 
 ---
 
@@ -73,7 +73,7 @@ Want to contribute or collaborate? Contact the **BabelCoders** team!
 
 ### 🚀 Genel Bakış
 
-**CeviriMate**, çeviri **hızını** ve **doğruluğunu** artırmak için gelişmiş **Yapay Zeka (AI)** ve **Doğal Dil İşleme (NLP)** teknolojilerini kullanan modern bir **web tabanlı Bilgisayar Destekli Çeviri (CAT)** aracıdır.
+**LexiMate**, çeviri **hızını** ve **doğruluğunu** artırmak için gelişmiş **Yapay Zeka (AI)** ve **Doğal Dil İşleme (NLP)** teknolojilerini kullanan modern bir **web tabanlı Bilgisayar Destekli Çeviri (CAT)** aracıdır.
 
 **BabelCoders** ismiyle bir araya gelen lise öğrencileri tarafından geliştirilmiştir. Desteklediği kullanıcılar:
 
@@ -129,4 +129,4 @@ Herhangi bir **kelime** veya **ifade**yi seçerek **Google’da** bağlam arayı
 
 Katkıda bulunmak veya işbirliği yapmak ister misiniz? **BabelCoders** ekibiyle iletişime geçin!
 
-> ✨ *CeviriMate — Diller arasında yapay zekanın gücüyle köprü kurar.*
+> ✨ *LexiMate — Diller arasında yapay zekanın gücüyle köprü kurar.*
