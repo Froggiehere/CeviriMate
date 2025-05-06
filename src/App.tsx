@@ -31,7 +31,7 @@ function App() {
           <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 flex justify-between items-center">
             <h1 className="text-3xl font-bold text-primary dark:text-white flex items-center">
               <span className="text-accent mr-2">✦</span>
-              LexiMate
+              ÇeviriMate
             </h1>
             <nav className="flex space-x-2">
               <NavLink to="/">Çeviri</NavLink>
@@ -49,7 +49,7 @@ function App() {
 
         <footer className="mt-auto py-6 bg-white dark:bg-gray-800 shadow-inner">
           <div className="max-w-7xl mx-auto px-4 text-center text-sm text-gray-500 dark:text-gray-400">
-            © {new Date().getFullYear()} LexiMate - All rights reserved
+            © {new Date().getFullYear()} ÇeviriMate - All rights reserved
           </div>
         </footer>
 
