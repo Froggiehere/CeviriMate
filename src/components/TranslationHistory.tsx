@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { getDatabase, ref, onValue, remove } from 'firebase/database';
 import { app } from '../firebase';
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 interface TranslationRecord {
   id: string;
@@ -12,15 +13,25 @@ interface TranslationRecord {
   targetLanguage: string;
 }
 
+// Create a service to handle sending text to editor
+// This can be in a separate file in a real app
+let editorTextSetter: ((title: string, content: string) => void) | null = null;
+
+export const registerEditorTextSetter = (setter: (title: string, content: string) => void) => {
+  editorTextSetter = setter;
+};
+
 export const TranslationHistory: React.FC = () => {
   const [translations, setTranslations] = useState<TranslationRecord[]>([]);
   const [loadingId, setLoadingId] = useState<string | null>(null);
+  const [sendingToEditorId, setSendingToEditorId] = useState<string | null>(null);
   const [analysisModal, setAnalysisModal] = useState<{
     visible: boolean;
     content: string;
   }>({ visible: false, content: '' });
   const [isLoading, setIsLoading] = useState(true);
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
+  const navigate = useNavigate();
 
   useEffect(() => {
     const db = getDatabase(app);
@@ -97,6 +108,32 @@ export const TranslationHistory: React.FC = () => {
     }
   };
 
+  const sendToEditor = (item: TranslationRecord) => {
+    setSendingToEditorId(item.id);
+    try {
+      // Use session storage to transfer the text to editor
+      sessionStorage.setItem('textEditorContent', item.targetText);
+      sessionStorage.setItem('textEditorTitle', `${item.sourceLanguage} - ${item.targetLanguage} Çevirisi`);
+      
+      // If we have a direct setter function, use it (in-app communication)
+      if (editorTextSetter) {
+        editorTextSetter(
+          `${item.sourceLanguage} - ${item.targetLanguage} Çevirisi`,
+          item.targetText
+        );
+      }
+      
+      // Navigate to the editor page
+      navigate('/editor');
+      toast.success('Metin editöre gönderildi');
+    } catch (error) {
+      console.error('Error sending to editor:', error);
+      toast.error('Metin editöre gönderilirken hata oluştu');
+    } finally {
+      setSendingToEditorId(null);
+    }
+  };
+
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     return new Intl.DateTimeFormat('tr-TR', {
@@ -131,8 +168,8 @@ export const TranslationHistory: React.FC = () => {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-semibold text-primary dark:text-white">Çeviri Geçmişi</h2>
-        <span className="text-sm text-gray-500 dark:text-gray-400">
+        <h2 className="text-2xl font-semibold text-primary dark:text-accent">Çeviri Geçmişi</h2>
+        <span className="text-sm text-primary/60 dark:text-accent/80">
           {translations.length} çeviri kaydı
         </span>
       </div>
@@ -160,6 +197,30 @@ export const TranslationHistory: React.FC = () => {
                   </span>
                 </div>
                 <div className="flex space-x-2">
+                  <button
+                    onClick={() => sendToEditor(item)}
+                    className={`text-xs px-3 py-1 rounded-md flex items-center gap-1 transition-colors duration-200
+                      ${sendingToEditorId === item.id 
+                        ? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-wait' 
+                        : 'bg-green-100 text-green-600 hover:bg-green-200 dark:bg-green-900/20 dark:text-green-400 dark:hover:bg-green-900/30'
+                      }`}
+                    disabled={sendingToEditorId === item.id}
+                  >
+                    {sendingToEditorId === item.id ? (
+                      <>
+                        <span className="w-3 h-3 border-2 border-t-transparent border-current rounded-full animate-spin"></span>
+                        Gönderiliyor
+                      </>
+                    ) : (
+                      <>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                        Editöre Gönder
+                      </>
+                    )}
+                  </button>
                   <button
                     onClick={() => analyzeSingleText(item.sourceText, item.targetText, item.id)}
                     className={`text-xs px-3 py-1 rounded-md flex items-center gap-1 transition-colors duration-200

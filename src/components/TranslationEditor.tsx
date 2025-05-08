@@ -106,13 +106,13 @@ export const TranslationEditor: React.FC = () => {
 
   return (
     <div className="space-y-8">
-      <div className="p-6 space-y-6 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg shadow-lg">
+      <div className="p-6 space-y-6 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg shadow-lg border border-primary/5 dark:border-primary/10">
         {/* Language Selectors */}
         <div className="flex flex-col md:flex-row md:items-center gap-4">
           <div className="flex-1">
             <label className="block text-sm font-medium mb-2 text-primary dark:text-accent">Kaynak Dil</label>
             <select
-              className="w-full p-3 border rounded-md bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 
+              className="w-full p-3 border rounded-md bg-white dark:bg-gray-700 border-primary/20 dark:border-accent/30 
                          text-gray-800 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary 
                          dark:focus:ring-accent dark:focus:border-accent transition duration-200"
               value={sourceLanguage}
@@ -127,8 +127,8 @@ export const TranslationEditor: React.FC = () => {
           {/* Swap Button */}
           <button 
             onClick={handleSwapLanguages}
-            className="flex-shrink-0 self-center mt-4 md:mt-0 p-2 rounded-full bg-primary/10 text-primary 
-                       dark:bg-accent/20 dark:text-accent hover:bg-primary/20 dark:hover:bg-accent/30 
+            className="flex-shrink-0 self-center mt-4 md:mt-0 p-2 rounded-full bg-accent/20 text-accent 
+                       dark:bg-accent/30 dark:text-accent hover:bg-accent/30 dark:hover:bg-accent/40 
                        transition-colors duration-200"
             title="Dilleri Değiştir"
           >
@@ -141,7 +141,7 @@ export const TranslationEditor: React.FC = () => {
           <div className="flex-1">
             <label className="block text-sm font-medium mb-2 text-primary dark:text-accent">Hedef Dil</label>
             <select
-              className="w-full p-3 border rounded-md bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 
+              className="w-full p-3 border rounded-md bg-white dark:bg-gray-700 border-primary/20 dark:border-accent/30 
                          text-gray-800 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary 
                          dark:focus:ring-accent dark:focus:border-accent transition duration-200"
               value={targetLanguage}
@@ -162,9 +162,9 @@ export const TranslationEditor: React.FC = () => {
             </label>
             <textarea
               className="w-full h-48 border p-4 rounded-lg bg-white dark:bg-gray-700 
-                         border-gray-300 dark:border-gray-600 text-gray-800 dark:text-white 
-                         focus:ring-2 focus:ring-primary focus:border-primary 
-                         dark:focus:ring-accent dark:focus:border-accent transition duration-200"
+                         border-primary/20 dark:border-accent/30 text-gray-800 dark:text-white 
+                         focus:ring-2 focus:ring-primary/70 focus:border-primary/70 
+                         dark:focus:ring-accent/70 dark:focus:border-accent/70 transition duration-200"
               placeholder="Çevirmek için metin gir..."
               value={sourceText}
               onChange={(e) => setSourceText(e.target.value)}
@@ -177,8 +177,8 @@ export const TranslationEditor: React.FC = () => {
             </label>
             <textarea
               className="w-full h-48 border p-4 rounded-lg bg-gray-50 dark:bg-gray-700 
-                         border-gray-300 dark:border-gray-600 text-gray-800 dark:text-white 
-                         focus:ring-2 focus:ring-accent focus:border-accent transition duration-200"
+                         border-primary/20 dark:border-accent/30 text-gray-800 dark:text-white 
+                         focus:ring-2 focus:ring-accent/70 focus:border-accent/70 transition duration-200"
               placeholder="Çevirilmiş metin..."
               value={targetText}
               readOnly
@@ -207,7 +207,7 @@ export const TranslationEditor: React.FC = () => {
       </div>
       
       {/* Help Card */}
-      <div className="p-5 bg-primary/5 dark:bg-accent/10 rounded-lg border border-primary/10 dark:border-accent/20">
+      <div className="p-5 bg-accent/5 dark:bg-accent/10 rounded-lg border border-accent/20 dark:border-accent/30">
         <h3 className="text-primary dark:text-accent font-medium mb-2">Nasıl Kullanılır?</h3>
         <ul className="list-disc pl-5 space-y-1 text-sm text-gray-700 dark:text-gray-300">
           <li>Metninizi sol taraftaki kutucuğa yazın</li>
