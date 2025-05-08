@@ -5,6 +5,10 @@ import { TranslationHistory } from './components/TranslationHistory';
 import { DocumentHistory } from './components/DocumentHistory';
 import { TextEditor } from './components/TextEditor';
 import { Toaster } from 'react-hot-toast';
+import { ResetPassword } from './components/auth/ResetPassword';
+import { UserProfile } from './components/auth/UserProfile';
+import { Login } from './components/auth/Login';
+import { Signup } from './components/auth/Signup';
 
 // Navigation link component for consistent styling
 const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => {
@@ -50,6 +54,10 @@ function App() {
             <Route path="/history" element={<TranslationHistory />} />
             <Route path="/editor" element={<TextEditor />} />
             <Route path="/documents" element={<DocumentHistory />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/userprofile" element={<UserProfile />} />
+            <Route path="/resetpassword" element={<ResetPassword />} />
           </Routes>
         </main>
 
