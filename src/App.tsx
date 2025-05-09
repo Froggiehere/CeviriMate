@@ -44,6 +44,7 @@ function App() {
               <NavLink to="/history">Geçmiş</NavLink>
               <NavLink to="/editor">Editör</NavLink>
               <NavLink to="/documents">Belgelerim</NavLink>
+              <NavLink to="/signup">Kaydol</NavLink>
             </nav>
           </div>
         </header>
